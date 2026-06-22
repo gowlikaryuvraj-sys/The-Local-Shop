@@ -266,6 +266,21 @@ Shop Now
 <section id="products" class="products">
 
 <h2 class="section-title">Our Products</h2>
+  <input
+type="text"
+id="search"
+placeholder="🔍 Search Products..."
+onkeyup="searchProducts()"
+style="
+width:100%;
+max-width:500px;
+display:block;
+margin:0 auto 30px;
+padding:15px;
+border-radius:10px;
+border:1px solid #ccc;
+font-size:16px;
+">
 
 <div class="carousel">
 
@@ -383,7 +398,33 @@ document.getElementById("cartItems").innerHTML=html;
 
 }
 
-function toggleCart(){
+
+  function searchProducts(){
+
+let value =
+document.getElementById("search")
+.value
+.toLowerCase();
+
+let cards =
+document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+let title =
+card.querySelector("h3")
+.innerText
+.toLowerCase();
+
+if(title.includes(value)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+  }function toggleCart(){
 
 document
 .getElementById("drawer")
