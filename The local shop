@@ -269,7 +269,7 @@ font-size:2rem;
 <img src="https://picsum.photos/300/300?1">
 <div class="card-content">
 <h3>Wireless Earbuds</h3>
-<div class="price">₹99</div>
+<div class="price">₹3999</div>
 <button class="add-btn"
 onclick="addToCart('Wireless Earbuds',3999)"
 Add To Cart
@@ -281,7 +281,7 @@ Add To Cart
 <img src="https://picsum.photos/300/300?2">
 <div class="card-content">
 <h3>Sports Watch</h3>
-<div class="price">₹149</div>
+<div class="price">₹4999</div>
 <button class="add-btn"
 onclick="addToCart('Sports Watch',4999)"
 Add To Cart
@@ -293,7 +293,7 @@ Add To Cart
 <img src="https://picsum.photos/300/300?3">
 <div class="card-content">
 <h3>Power Bank</h3>
-<div class="price">₹199</div>
+<div class="price">₹1999</div>
 <button class="add-btn"
 onclick="addToCart('Power Bank',1999)"
 Add To Cart
