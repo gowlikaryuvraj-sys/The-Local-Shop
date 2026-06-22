@@ -347,7 +347,7 @@ class="whatsapp">
 
 <script>
 
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("vaW_SdFi_NhOOr9Bs");
 
 let cart=[];
 
@@ -411,8 +411,8 @@ cart.map(i=>`${i.name} - ₹${i.price}`)
 .join("\n");
 
 emailjs.send(
-"YOUR_SERVICE_ID",
-"YOUR_TEMPLATE_ID",
+"service_277zwdn",
+"template_5vqzuua",
 {
 customer_name:customerName,
 customer_phone:customerPhone,
