@@ -124,16 +124,18 @@ font-weight:bold;
 margin:10px 0;
 }
 
-..add-btn{
+.add-btn{
 width:100%;
-padding:14px;
+padding:15px;
 background:#ff6b00;
 color:white;
 border:none;
 border-radius:12px;
-cursor:pointer;
 font-size:16px;
-font-weight:600;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
+display:block;
 }
 }
 
@@ -250,7 +252,7 @@ font-size:2rem;
 <h1>🛒 The Local Shop</h1>
 <p>Everything You Need, Delivered Fast</p>
 
-<a href="#products" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+  <a href="#products" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'});return false;">
 <button class="shop-btn">Shop Now</button>
 </a>
 
@@ -267,7 +269,7 @@ font-size:2rem;
 <div class="carousel">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500">
+<img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f37?w=600">
 <div class="card-content">
 <h3>Wireless Earbuds</h3>
 <div class="price">₹3999</div>
@@ -279,24 +281,23 @@ Add To Cart
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600">
 <div class="card-content">
 <h3>Sports Watch</h3>
 <div class="price">₹4999</div>
-<button class="add-btn"
-onclick="addToCart('Sports Watch',4999)"
+<button class="add-btn" onclick="addToCart('Sports Watch',4999)">
 Add To Cart
+</button>
 </button>
 </div>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1609592806596-b43c7f0c7b06?w=500">
+<img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=600">
 <div class="card-content">
 <h3>Power Bank</h3>
 <div class="price">₹1999</div>
-<button class="add-btn"
-onclick="addToCart('Power Bank',1999)"
+<button class="add-btn" onclick="addToCart('Power Bank',1999)">
 Add To Cart
 </button>
 </div>
