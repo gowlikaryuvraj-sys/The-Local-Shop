@@ -26,7 +26,7 @@ body{
 background:#f4f6f9;
 font-family:'Poppins',sans-serif;
 }
-}
+
 
 /* HERO */
 
@@ -438,22 +438,20 @@ alert("Failed To Send");
 
 }
 
-setInterval(()=>{
+  setInterval(() => {
+  const carousel = document.querySelector(".carousel");
 
-const carousel=
-document.querySelector(".carousel");
+  if (!carousel) return;
 
-carousel.scrollLeft+=280;
+  carousel.scrollLeft += 280;
 
-if(
-carousel.scrollLeft +
-carousel.clientWidth >=
-carousel.scrollWidth
-){
-carousel.scrollLeft=0;
-}
-
-},3000);
+  if (
+    carousel.scrollLeft + carousel.clientWidth >=
+    carousel.scrollWidth
+  ) {
+    carousel.scrollLeft = 0;
+  }
+}, 3000);
 
 </script>
 
