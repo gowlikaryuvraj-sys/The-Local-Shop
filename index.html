@@ -252,7 +252,8 @@ font-size:2rem;
 <h1>🛒 The Local Shop</h1>
 <p>Everything You Need, Delivered Fast</p>
 
-<button class="shop-btn" onclick="location.href='#products'">
+<button class="shop-btn"
+onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
 Shop Now
 </button>
 
@@ -352,7 +353,7 @@ emailjs.init("vaW_SdFi_NhOOr9Bs");
 let cart=[];
 
 function addToCart(name,price){
-alert("Add To Cart Clicked");
+window.alert("HELLO");
 cart.push({
 name,
 price
