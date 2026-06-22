@@ -102,7 +102,7 @@ min-width:280px;
 background:white;
 border-radius:20px;
 overflow:hidden;
-box-shadow:0 8px 25px rgba(0,0,0,.12);
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 transition:.3s;
 }
 .card:hover{
@@ -124,16 +124,17 @@ font-weight:bold;
 margin:10px 0;
 }
 
-.add-btn{
+..add-btn{
 width:100%;
-padding:12px;
+padding:14px;
 background:#ff6b00;
 color:white;
 border:none;
-border-radius:10px;
+border-radius:12px;
 cursor:pointer;
-font-weight:600;
 font-size:16px;
+font-weight:600;
+}
 }
 
 /* CART */
@@ -249,7 +250,7 @@ font-size:2rem;
 <h1>🛒 The Local Shop</h1>
 <p>Everything You Need, Delivered Fast</p>
 
-<a href="#products">
+<a href="#products" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
 <button class="shop-btn">Shop Now</button>
 </a>
 
@@ -266,7 +267,7 @@ font-size:2rem;
 <div class="carousel">
 
 <div class="card">
-<img src="https://picsum.photos/300/300?1">
+<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=500">
 <div class="card-content">
 <h3>Wireless Earbuds</h3>
 <div class="price">₹3999</div>
@@ -278,7 +279,7 @@ Add To Cart
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/300/300?2">
+<img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500">
 <div class="card-content">
 <h3>Sports Watch</h3>
 <div class="price">₹4999</div>
@@ -290,7 +291,7 @@ Add To Cart
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/300/300?3">
+<img src="https://images.unsplash.com/photo-1609592806596-b43c7f0c7b06?w=500">
 <div class="card-content">
 <h3>Power Bank</h3>
 <div class="price">₹1999</div>
