@@ -144,7 +144,7 @@ display:block;
 .cart-icon{
 position:fixed;
 right:20px;
-bottom:90px;
+bottom:100px;
 width:60px;
 height:60px;
 background:#ff6b00;
@@ -252,9 +252,10 @@ font-size:2rem;
 <h1>🛒 The Local Shop</h1>
 <p>Everything You Need, Delivered Fast</p>
 
-  <a href="#products" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'});return false;">
-<button class="shop-btn">Shop Now</button>
-</a>
+<button class="shop-btn"
+onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+Shop Now
+</button>
 
 </div>
 
@@ -269,7 +270,7 @@ font-size:2rem;
 <div class="carousel">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f37?w=600">
+<img src="https://picsum.photos/300/300?random=11">
 <div class="card-content">
 <h3>Wireless Earbuds</h3>
 <div class="price">₹3999</div>
@@ -308,7 +309,6 @@ Add To Cart
 </section>
 
 <!-- CART ICON -->
-
 <div class="cart-icon" onclick="toggleCart()">
 <i class="fa-solid fa-cart-shopping"></i>
 <div class="cart-count" id="count">0</div>
