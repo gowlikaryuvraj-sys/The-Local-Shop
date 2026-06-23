@@ -443,10 +443,16 @@ let html="";
 let total=0
 cart.forEach(item=>{
 total += item.price;
-html+=`
+  html+=`
 <div class="cart-item">
 ${item.name} - ₹${item.price}
+
+<button onclick="removeItem(${cart.indexOf(item)})">
+❌ Remove
+</button>
+
 </div>
+`;
 `;
 
 });
@@ -509,6 +515,13 @@ document
 
 }
 
+function removeItem(index){
+
+cart.splice(index,1);
+
+updateCart();
+
+}
 function sendOrder(){
 
 let customerName=
