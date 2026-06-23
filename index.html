@@ -443,7 +443,7 @@ let html="";
 let total=0
 cart.forEach(item=>{
 total += item.price;
-  html+=`
+html += `
 <div class="cart-item">
 ${item.name} - ₹${item.price}
 
@@ -453,7 +453,6 @@ ${item.name} - ₹${item.price}
 
 </div>
 `;
-`;
 
 });
 
@@ -461,7 +460,13 @@ document.getElementById("cartItems").innerHTML=html;
 document.getElementById("totalAmount").innerText =
 "Total: ₹" + total;
 }
+function removeItem(index){
 
+cart.splice(index,1);
+
+updateCart();
+
+  }
 
   function searchProducts(){
 
